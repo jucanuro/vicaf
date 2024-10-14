@@ -48,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
   <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
-        <label for="business-name" class="block text-sm font-semibold leading-6 text-white">Razón Social</label>
+        <label for="business-name" class="block text-sm font-semibold leading-6 text-white">Razón Social/Nombres</label>
         <div class="mt-2.5">
           <input type="text" name="Razón Social" id="business-name" required class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-cyan-700 sm:text-sm sm:leading-6">
         </div>
       </div>
       <div>
-        <label for="ruc" class="block text-sm font-semibold leading-6 text-white">RUC</label>
+        <label for="ruc" class="block text-sm font-semibold leading-6 text-white">RUC/DNI</label>
         <div class="mt-2.5">
           <input type="text" name="RUC" id="ruc" required class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-cyan-700 sm:text-sm sm:leading-6">
         </div>

@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <div id="modal2" class="fixed inset-0 top-2 bg-black bg-opacity-50 hidden flex items-center justify-center z-30">
                     <div class="bg-white p-6 rounded-lg shadow-lg lg:w-1/2 w-full h-full mt-28 relative">
                         <h2 class="text-sm lg:text-lg font-bold mb-4">Políticas de calidad</h2>
-                        <iframe src="static/pdf/Invoice-0003.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
+                        <iframe src="static/pdf/POLÍTICA_DE_CALIDAD.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
                         <button data-modal-close="modal2" class="absolute top-2 right-2 text-gray-500">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </button>
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <div id="modal4" class="fixed inset-0 top-2 bg-black bg-opacity-50 hidden flex items-center justify-center z-30">
                     <div class="bg-white p-6 rounded-lg shadow-lg lg:w-1/2 w-full h-full mt-28 relative">
                         <h2 class="text-sm lg:text-lg font-bold mb-4">Políticas de antisoborno</h2>
-                        <iframe src="static/pdf/Invoice-0003.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
+                        <iframe src="static/pdf/POLÍTICA_ANTISOBORNO.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
                         <button data-modal-close="modal4" class="absolute top-2 right-2 text-gray-500">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </button>

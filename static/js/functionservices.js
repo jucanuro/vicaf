@@ -23,7 +23,7 @@ const images = [
       '/staticvicaf/static/img/CC-2.jpeg',
       '/staticvicaf/static/img/CC-3.jpeg',
       '/staticvicaf/static/img/CC-4.jpeg',
-  ],
+    ],
     // Añadir imágenes para otros elementos del menú aquí
 ];
 
@@ -54,35 +54,29 @@ function changeImage(direction) {
 }
 
 function highlightMenuItem(index) {
-  menuItems.forEach((item, i) => {
-      item.classList.toggle('bg-blue-300', i === index); // Cambia el color de fondo
-      item.classList.toggle('text-white', i === index); // Cambia el color del texto
-  });
+    menuItems.forEach((item, i) => {
+        item.classList.toggle('bg-blue-300', i === index); // Cambia el color de fondo
+        item.classList.toggle('text-white', i === index); // Cambia el color del texto
+    });
 }
 
 function openModal() {
-  modal.classList.remove('hidden');
+    modal.classList.remove('hidden');
 }
 
 // Cerrar el modal
 function closeModal() {
-  modal.classList.add('hidden');
+    modal.classList.add('hidden');
 }
 
 menuItems.forEach((item, index) => {
-  item.addEventListener('click', () => {
-      updateCarousel(index);
-      openModal();  // Abrir el modal al seleccionar un elemento del menú
-  });
+    item.addEventListener('click', () => {
+        updateCarousel(index);
+        openModal();  // Abrir el modal al seleccionar un elemento del menú
+    });
 })
 
 // Event listeners
-menuItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        updateCarousel(index);
-    });
-});
-
 document.getElementById('prev').addEventListener('click', () => {
     changeImage(-1);
 });
