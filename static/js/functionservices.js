@@ -1,0 +1,134 @@
+const menuItems = document.querySelectorAll('.menu-item');
+const imagesContainer = document.getElementById('images');
+const modal = document.getElementById('modal');
+const modalTitle = document.getElementById('modalTitle');
+const modalContent = document.getElementById('modalContent');
+const closeModalButton = document.getElementById('closeModal');
+
+const images = [
+    [
+        '/vicaf/static/img/services/CC-1.jpeg',
+        '/vicaf/static/img/services/CC-2.jpeg',
+        '/vicaf/static/img/services/CC-3.jpeg',
+        '/vicaf/static/img/services/CC-4.jpeg',
+    ],
+    [
+        '/vicaf/static/img/services/EMS-1.jpg',
+        '/vicaf/static/img/services/EMS-2.jpg',
+        '/vicaf/static/img/services/EMS-3.jpg',
+        '/vicaf/static/img/services/e_mecanica_suelos1.jpg',
+    ],
+    [
+      '/staticvicaf/static/img/CC-1.jpeg',
+      '/staticvicaf/static/img/CC-2.jpeg',
+      '/staticvicaf/static/img/CC-3.jpeg',
+      '/staticvicaf/static/img/CC-4.jpeg',
+  ],
+    // Añadir imágenes para otros elementos del menú aquí
+];
+
+let currentIndex = 0;
+let currentImages = images[0];
+
+// Función para actualizar el carrusel
+function updateCarousel(index) {
+    currentImages = images[index];
+    imagesContainer.innerHTML = currentImages.map((src, i) => {
+        return `<img src="${src}" alt="Imagen ${i + 1}" class="carousel-image w-full h-full object-cover ${i === 0 ? '' : 'hidden'}">`;
+    }).join('');
+    currentIndex = 0;
+}
+
+// Cambiar imagen en el carrusel
+function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = currentImages.length - 1;
+    } else if (currentIndex >= currentImages.length) {
+        currentIndex = 0;
+    }
+    const images = document.querySelectorAll('.carousel-image');
+    images.forEach((img, i) => {
+        img.classList.toggle('hidden', i !== currentIndex);
+    });
+}
+
+function highlightMenuItem(index) {
+  menuItems.forEach((item, i) => {
+      item.classList.toggle('bg-blue-300', i === index); // Cambia el color de fondo
+      item.classList.toggle('text-white', i === index); // Cambia el color del texto
+  });
+}
+
+function openModal() {
+  modal.classList.remove('hidden');
+}
+
+// Cerrar el modal
+function closeModal() {
+  modal.classList.add('hidden');
+}
+
+menuItems.forEach((item, index) => {
+  item.addEventListener('click', () => {
+      updateCarousel(index);
+      openModal();  // Abrir el modal al seleccionar un elemento del menú
+  });
+})
+
+// Event listeners
+menuItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        updateCarousel(index);
+    });
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    changeImage(-1);
+});
+
+document.getElementById('next').addEventListener('click', () => {
+    changeImage(1);
+});
+
+// Inicializar con el primer elemento del menú
+updateCarousel(0);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItems = document.querySelectorAll('.menu-item');
+    const tooltips = document.querySelectorAll('.tooltip');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            // Cierra todos los tooltips abiertos
+            tooltips.forEach(tooltip => tooltip.classList.add('hidden'));
+            
+            // Muestra el tooltip correspondiente
+            const modalId = this.getAttribute('data-modal');
+            const tooltip = document.getElementById(modalId);
+            tooltip.classList.remove('hidden');
+        });
+    });
+
+    // Cerrar tooltip
+    document.querySelectorAll('.close-tooltip').forEach(button => {
+        button.addEventListener('click', function () {
+            this.closest('.tooltip').classList.add('hidden');
+        });
+    });
+});
+
+const menuItems1 = document.querySelectorAll('.menu-item');
+    
+    menuItems1.forEach(item => {
+        item.addEventListener('click', function() {
+            // Remove active class from all items
+            menuItems1.forEach(i => i.classList.remove('bg-blue-200', 'border-blue-400'));
+            
+            // Add active class to the clicked item
+            this.classList.add('bg-blue-200', 'border-blue-400');
+        });
+    });
+
+//Imagenes animaciones
+
