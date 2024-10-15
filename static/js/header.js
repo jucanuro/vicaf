@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         <div class="container max-w-full flex justify-between items-center h-16">
           <!-- Logo -->
           <a href="#" class="text-2xl font-bold lg:px-8">
-            <img class="w-[autopx] h-[autopx] opacity-100 shadow-none col-span-2 lg:max-h-12 max-h-9 w-full object-contain lg:col-span-1 shadow-2" src="static/img/logos/LogoT.png" alt="Reform" width="158" height="48">
+            <img class="w-[autopx] h-[autopx] opacity-100 shadow-none col-span-2 lg:max-h-12 max-h-9 w-full object-contain lg:col-span-1 shadow-2" src="static/img/logos/LogoF.png" alt="Reform" width="158" height="48">
           </a>
           <!-- Navigation Links -->
           <nav class="container hidden md:flex text-xs font-semibold space-x-4">
