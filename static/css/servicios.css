@@ -46,3 +46,11 @@
 .close-tooltip {
   cursor: pointer;
 }
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 640px) {
+  .carousel-image {
+      height: 600px; /* Ajusta esta altura según tus necesidades */
+  }
+}

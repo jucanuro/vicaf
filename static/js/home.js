@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const templateHome = `
         <div class="bg-gray-50 mt-8">
             <!-- Modal -->
-            <div id="myModalHome" class="fixed left-1/4 inset-0 top-2 bg-gray-800 bg-opacity-75 flex z-50">
+            <div id="myModalHome" class="fixed lg:left-1/4 inset-0 top-2 bg-gray-800 bg-opacity-75 flex z-50">
                 <div class="bg-white p-6 mt-8 rounded-lg shadow-lg lg:w-3/4 w-full">
                     <div class="flex justify-between">
                         <h2 class="text-lg font-bold mt-2 mb-4">Certificado</h2>

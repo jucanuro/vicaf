@@ -53,6 +53,13 @@ function changeImage(direction) {
     });
 }
 
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenu.addEventListener('change', function () {
+    const selectedIndex = this.value;
+    updateCarousel(selectedIndex);
+    openModal();  // Abrir el modal al seleccionar una opción
+});
+
 function highlightMenuItem(index) {
     menuItems.forEach((item, i) => {
         item.classList.toggle('bg-blue-300', i === index); // Cambia el color de fondo
