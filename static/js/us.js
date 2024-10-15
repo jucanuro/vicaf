@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
               </div>
             </div>
             <div class="col-span-3">
-              <section class="dark:bg-gray-900 hidden lg:block">
+              <section class="hidden lg:block">
                 <div class="mx-auto max-w-screen-xl text-center">
                     <div class="mx-auto mb-1 max-w-screen-sm lg:mb-12">
                         <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center  py-4 mb-2">Nuestro Equipo</h2>
