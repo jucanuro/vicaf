@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const templateClients = `
         <div id="clientes" class="mx-auto bg-white max-w-full">
       <section class="py-4 lg:py-8 px-6">
-        <div class="container mx-auto">
+        <div class="w-full px-6">
           <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-gray-900 text-center">Nuestros Clientes</h2>
           <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 gap-y-8 mt-10 items-center">
             <div class="flex justify-center rolled-paper transform transition-transform duration-300 hover:scale-105">

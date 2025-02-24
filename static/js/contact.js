@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         </div>
       </div>
     </div>
-    <div class="mt-6">
+    <div class="mt-6 mb-4">
       <button type="submit" class="inline-block rounded-md px-3.5 py-1.5 text-sm font-semibold text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2">Enviar</button>
     </div>
   </div>
