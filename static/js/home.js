@@ -1,33 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     const templateHome = `
-        <div class="bg-gray-50 mt-8">
+        <div class="bg-gray-50 mt-16">
             <!-- Modal -->
-            <div id="myModalHome" class="fixed lg:left-1/4 inset-0 top-2 bg-gray-800 bg-opacity-75 flex z-50">
-                <div class="bg-white p-6 mt-8 rounded-lg shadow-lg lg:w-3/4 w-full">
-                    <div class="flex justify-between">
-                        <h2 class="text-lg font-bold mt-2 mb-4">Certificado</h2>
-                        <button id="closeModalHome" class="bg-gray-900 text-white  mb-4 rounded-full  w-8 h-8 mt-2 rounded hover:bg-red-600">
-                            <svg class="ml-1 fill-white text-white" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                height="24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-x-circle"
-                                >
-                                <circle cx="12" cy="12" r="10" stroke="white" fill="none" />
-                                <line x1="15" y1="9" x2="9" y2="15" stroke="white" />
-                                <line x1="9" y1="9" x2="15" y2="15" stroke="white" />
+            <div id="myModalHome" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+                <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl h-[90vh] relative mt-16">
+                    <div class="flex justify-between items-center p-4 border-b">
+                        <h2 class="text-lg font-bold">Certificado</h2>
+                        <button id="closeModalHome" class="bg-gray-900 text-white w-8 h-8 rounded-full hover:bg-red-600 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
                             </svg>
                         </button>
                     </div>
-                    <!-- Agregar un iframe para mostrar el PDF -->
-                    <iframe src="static/pdf/Invoice-0003.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
+
+                    <!-- Iframe para mostrar el PDF con estilos responsivos -->
+                    <iframe id="pdfFrame" src="static/pdf/GRUPO-VICAF-CERFIFICADO.pdf" class="w-full h-[85%]" frameborder="0"></iframe>
                 </div>
             </div>
+
             <!-- Carousel -->
             <div id="carousel" class="carousel relative w-full h-screen overflow-hidden">
                 <!-- Carousel Items -->

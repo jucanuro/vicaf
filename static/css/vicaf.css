@@ -135,3 +135,39 @@
   width: 100%;
   transition: transform 0.5s ease-in-out;
 }  
+/* Estilo Responsive para el PDF */
+#pdfFrame {
+  width: 100%;
+  height: 85%;
+}
+
+/* Versión Mobile: PDF más pequeño */
+@media (max-width: 768px) {
+  #myModalHome .bg-white {
+      width: 98%;
+      height: 80vh;
+  }
+
+  #pdfFrame {
+      width: 90%;
+      height: 90%;
+      margin: 0 auto;
+  }
+}
+/* Estilo Responsive para el PDF */
+
+/* Desktop */
+#pdfFrame {
+  width: 90%;
+  height: 82%;
+  margin: 0 auto;
+}
+
+/* Mobile: Menor de 768px */
+@media (max-width: 768px) {
+  #pdfFrame {
+      width: 98%;
+      height: 70%;
+      margin: 0 auto;
+  }
+}
