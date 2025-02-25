@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
             <div class="col-span-2 px-4">
               <div class="mt-6">
                 <h2 class="text-lg mt-6 lg:text-2xl font-bold tracking-tight text-gray-900 text-center">Sobre Nosotros</h2>
-                <p class="mt-6 lg:mt-12 px-2 lg:px-0 text-xs md:text-sm lg:text-md text-gray-500 text-justify">
+                <p class="mt-6 lg:mt-12 px-2 lg:px-0 text-xs md:text-sm lg:text-md text-gray-900 text-justify">
                         GRUPO VICAF brinda servicios de
                         calidad en la realización de ensayos de
                         materiales de construcción para
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     </svg>
                   </div>
                   <div>
-                    <h2 class="ml-4 text-md lg:text-xl font-bold mb-4">Misión</h2>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold text-gray-900 mb-4">Misión</h2>
                   </div>
                 </div>
-                <p class="text-gray-600 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
+                <p class="text-gray-900 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
                   Diseñar obras civiles y brindar servicios
                               complementarios, que garanticen la
                               seguridad, comodidad y la optimización
@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     </svg>
                   </div>
                   <div>
-                    <h2 class="ml-4 text-md lg:text-xl font-bold mb-4">Visión</h2>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold text-gray-900 mb-4">Visión</h2>
                   </div>
                 </div>
-                <p class="text-gray-600 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
+                <p class="text-gray-900 text-xs ml-8 md:text-sm mr-2 text-md text-justify">
                   Ser reconocidos en el ámbito regional y
                           nacional como una empresa que brinda
                           soluciones tangibles e innovadoras
@@ -66,14 +66,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     </svg>
                   </div>
                   <div>
-                    <h2 class="ml-4 text-md lg:text-xl font-bold">Logros</h2>
+                    <h2 class="ml-4 text-md lg:text-xl font-bold text-gray-900">Logros</h2>
                   </div>
                 </div>
                 <ul class="ml-2 list-disc pl-5 shadow-md px-4 py-4">
                     <li class="ml-2 mb-2 flex items-center mt-3">
                         <div class="flex">
                           <svg class="h-4 w-4 mt-1 fill-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>                        
-                          <p class="text-gray-600 text-sm text-justify ml-2 mr-2 mb-2">Acreditación</p> 
+                          <p class="text-gray-900 text-sm text-justify ml-2 mr-2 mb-2">Acreditación</p> 
                         </div>
                         <button data-modal="modal1" class="ml-auto mb-2  text-blue-500 hover:text-blue-700">
                           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <div id="modal1" class="fixed inset-0 top-2 bg-black bg-opacity-50 hidden flex items-center justify-center z-30">
                     <div class="bg-white p-6 rounded-lg shadow-lg lg:w-1/2 w-full h-full mt-28 relative">
                         <h2 class="text-sm lg:text-lg font-bold mb-4">Acreditación</h2>
-                        <iframe src="static/pdf/Invoice-0003.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
+                        <iframe src="static/pdf/GRUPO-VICAF-CERFIFICADO.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
                         <button data-modal-close="modal1" class="absolute top-2 right-2 text-gray-500">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </button>
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <div id="modal3" class="fixed inset-0 top-2 bg-black bg-opacity-50 hidden flex items-center justify-center z-30">
                     <div class="bg-white p-6 rounded-lg shadow-lg lg:w-1/2 w-full h-full mt-28 relative">
                         <h2 class="text-sm lg:text-lg font-bold mb-4">Políticas de seguridad</h2>
-                        <iframe src="static/pdf/Invoice-0003.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
+                        <iframe src="static/pdf/VCF-SGS-POL-001-POLITICA-DE-SEGURIDAD.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
                         <button data-modal-close="modal3" class="absolute top-2 right-2 text-gray-500">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </button>
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <div id="modal4" class="fixed inset-0 top-2 bg-black bg-opacity-50 hidden flex items-center justify-center z-30">
                     <div class="bg-white p-6 rounded-lg shadow-lg lg:w-1/2 w-full h-full mt-28 relative">
                         <h2 class="text-sm lg:text-lg font-bold mb-4">Políticas de antisoborno</h2>
-                        <iframe src="static/pdf/POLÍTICA_ANTISOBORNO.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
+                        <iframe src="static/pdf/VCF-SGAS-POL-001-POLÍTICA-ANTISOBORNO.pdf" width="100%" height="100%" class="mb-4" frameborder="0"></iframe>
                         <button data-modal-close="modal4" class="absolute top-2 right-2 text-gray-500">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </button>
