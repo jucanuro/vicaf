@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
             </button>
         </a>
     </div>
-    <div class="flex w-full justify-end mr-6 lg:hidden block">
+    <div class="flex w-full justify-end mr-6 hidden">
       <a href="templates/services.html">
           <button type="button" 
               class="flex items-center text-white bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 hover:from-blue-500 hover:via-blue-600 hover:to-blue-700 focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out rounded-full text-sm px-7 py-3 font-medium shadow-lg border border-blue-500">
