@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const templateTeam = `
     <section class="py-8 bg-gray-100">
     <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Conoce a Nuestro Equipo</h2>
+        <h2 class="text-lg lg:text-2xl font-bold text-gray-900 mb-8">Nuestro Equipo</h2>
 
         <div class="space-y-6">
             <!-- Miembro 1 (Izquierda) -->
             <div class="flex items-center space-x-4 hover:bg-white hover:shadow-lg p-1 rounded-lg transition duration-300">
                 <img src="static/img/staff/Carmen.png" alt="Carmen Bernui" class="w-20 h-20 rounded-full border-4 border-gray-300 hover:border-blue-500 transition duration-300">
                 <div class="text-left">
-                    <h3 class="text-lg font-semibold text-gray-900">Carmen Bernui Escobedo</h3>
-                    <p class="text-gray-500 text-sm">Gerente General</p>
+                    <h3 class="text-sm lg:text-lg font-semibold text-gray-900">Carmen Bernui Escobedo</h3>
+                    <p class="text-gray-500 text-xs lg:text-sm">Gerente General</p>
                     <div class="mt-1 flex space-x-3">
                         <a href="https://www.linkedin.com/in/carmen-bernui-escobedo-19338b28/" target="_blank" class="text-blue-600 hover:text-blue-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
             <div class="flex items-center space-x-4 hover:bg-white hover:shadow-lg p-1 rounded-lg transition duration-300 md:flex-row-reverse">
                 <img src="static/img/staff/Frank.png" alt="Frank Gonzáles" class="w-20 h-20 rounded-full border-4 border-gray-300 hover:border-blue-500 transition duration-300">
                 <div class="text-left">
-                    <h3 class="text-lg font-semibold text-gray-900">Frank Gonzáles Vásquez</h3>
-                    <p class="text-gray-500 text-sm">Gerente Operativo</p>
+                    <h3 class="text-sm lg:text-lg font-semibold text-gray-900">Frank Gonzáles Vásquez</h3>
+                    <p class="text-gray-500 text-xs lg:text-sm">Gerente Operativo</p>
                     <div class="mt-1 flex space-x-3">
                         <a href="https://pe.linkedin.com/in/frank-gonz%C3%A1les-80b2a2a8" target="_blank" class="text-blue-600 hover:text-blue-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
             <div class="flex items-center space-x-4 hover:bg-white hover:shadow-lg p-1 rounded-lg transition duration-300">
                <img src="static/img/staff/Raquel.png" alt="Carmen Bernui" class="w-20 h-20 rounded-full border-4 border-gray-300 hover:border-blue-500 transition duration-300">
                 <div class="text-left">
-                    <h3 class="text-lg font-semibold text-gray-900">Jessica Raquel Riojas Ortiz</h3>
-                    <p class="text-gray-500 text-sm">Jefe de Laboratorio</p>
+                    <h3 class="text-sm lg:text-lg font-semibold text-gray-900">Jessica Raquel Riojas Ortiz</h3>
+                    <p class="text-gray-500 text-xs lg:text-sm">Jefe de Laboratorio</p>
                     <div class="mt-1 flex space-x-3">
                         <a href="https://www.linkedin.com/in/jessica-raquel-riojas-ortiz-219278140/" target="_blank" class="text-blue-600 hover:text-blue-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">

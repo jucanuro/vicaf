@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
           <nav class="container hidden md:flex text-xs font-semibold space-x-4">
               <a id="tab1" href="#home" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-white rounded tab">Inicio</a>
               <a id="tab2" href="#nosotros" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Nosotros</a>
-              <a id="tab3" href="#logros" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Logros</a>
+              <a id="tab3" href="#nosotros" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Logros</a>
               <a id="tab4" href="#servicios" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Servicios</a>
               <a id="tab5" href="#clientes" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Clientes</a>
               <a id="tab7" href="#contactenos" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Contáctenos</a>
-              <a id="tab7" href="#bolsa" class="nav-link p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Bolsa de Trabajo</a>
+              <a id="tab7" href="#bolsa" class="nav-link hidden p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50 rounded tab">Bolsa de Trabajo</a>
           </nav>
   
           <!-- Social Media Links -->
@@ -44,11 +44,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
         <div id="mobile-menu" class="hidden container max-w-full md:hidden text-xs bg-white">
             <a href="#home" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Inicio</a>
             <a href="#nosotros" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Nosotros</a>
-            <a href="#logros" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Logros</a>
+            <a href="#nosotros" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Logros</a>
             <a href="#servicios" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Servicios</a>
             <a href="#clientes" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Clientes</a>
             <a href="#contactenos" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Contáctenos</a>
-            <a href="#bolsa" class="border border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Bolsa de Trabajo</a>
+            <a href="#bolsa" class="border hidden border-t-1 border-gray-50 block p-2 text-gray-900 font-semibold hover:bg-blue-950 hover:text-gray-50">Bolsa de Trabajo</a>
         </div>
       </header>
     `;
