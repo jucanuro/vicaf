@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const templateUs = ` <div id="nosotros" class="mx-auto max-w-full mb-4  lg:mb-0">
         <div class="container max-w-full">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div class="col-span-10 px-4">
+            <div class="col-span-12 px-4">
               <div class="mt-6">
                 <h2 class="text-lg mt-6 lg:text-2xl font-bold tracking-tight text-gray-900 text-center">Sobre Nosotros</h2>
                 <p class="mt-6 lg:mt-12 px-2 lg:px-0 text-xs md:text-sm lg:text-md text-gray-900 text-justify">
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 </p>
               </div>
               <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                <div class="col-span-1 mt-8">
+                <div class="col-span-1 mt-8 shadow-lg bg-white p-4 rounded-lg">
                     <div class="flex">
                       <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mt-1 text-yellow-400">
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                                   con sus necesidades y expectativas.
                     </p>
                 </div>
-                <div class="col-span-1 mt-8">
+                <div class="col-span-1 mt-8 shadow-lg bg-white p-4 rounded-lg">
                     <div class="flex">
                       <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 mt-1">
@@ -74,10 +74,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     </div>
                     <div class="bg-white shadow-lg mt-4  rounded-2xl overflow-hidden transform transition duration-300 hover:scale-105">
                         <img src="static/img/certificaciones/GRUPO-VICAF-CERTIFICADO.jpg" alt="Imagen" class="w-full h-56 object-contain">
-                        <div class="p-4 flex">
-                          <h2 class="text-sm lg:text-lg font-semibold text-gray-800">Acreditación Inacal</h2>
+                        <div class="p-4 flex justify-between">
+                          <h2 class="text-xs lg:text-lg font-semibold text-gray-800">Acreditación Inacal</h2>
                           <button data-modal="modal1" class="ml-auto mb-1  text-blue-500 hover:text-blue-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-6 lg:h-6 w-4 h-4 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                               <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />
                             </svg>
                           </button>
@@ -93,14 +93,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
                           <h2 class="ml-2 text-md lg:text-xl text-gray-900 font-bold">Políticas</h2>
                         </div>
                     </div>
-                    <div class="grid grid-cols-9 gap-4 mt-4">
+                    <div class="grid lg:grid-cols-9 grid-cols-1 gap-4 mt-4">
                         <div class="col-span-3">
                             <div class="bg-white shadow-lg  rounded-2xl overflow-hidden transform transition duration-300 hover:scale-105">
                                 <img src="static/img/politicas/POLÍTICA_DE_CALIDAD.jpg" alt="Imagen" class="w-full h-56 object-contain">
-                                <div class="p-4 flex">
-                                  <h2 class="text-sm lg:text-lg font-semibold text-gray-800">Política de calidad</h2>
+                                <div class="p-4 flex justify-between">
+                                  <h2 class="text-xs lg:text-lg font-semibold text-gray-800">Política de calidad</h2>
                                   <button data-modal="modal2" class="ml-auto  text-blue-500 hover:text-blue-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-6 lg:h-6 w-4 h-4 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                       <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />
                                     </svg>
                                   </button>
@@ -110,10 +110,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
                         <div class="col-span-3">
                             <div class="bg-white shadow-lg  rounded-2xl overflow-hidden transform transition duration-300 hover:scale-105">
                                 <img src="static/img/politicas/POLITICA-DE-SEGURIDAD.jpg" alt="Imagen" class="w-full h-56 object-contain">
-                                <div class="p-4 flex">
-                                  <h2 class="text-sm lg:text-lg font-semibold text-gray-800">Política de seguridad</h2>
+                                <div class="p-4 flex justify-between">
+                                  <h2 class="text-xs lg:text-lg font-semibold text-gray-800">Política de seguridad</h2>
                                   <button data-modal="modal3" class="ml-auto  text-blue-500 hover:text-blue-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-6 lg:h-6 w-4 h-4 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                       <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />
                                     </svg>
                                   </button>
@@ -123,10 +123,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
                         <div class="col-span-3">
                             <div class="bg-white shadow-lg  rounded-2xl overflow-hidden transform transition duration-300 hover:scale-105">
                                 <img src="static/img/politicas/POLÍTICA-ANTISOBORNO.jpg" alt="Imagen" class="w-full h-56 object-contain">
-                                <div class="p-4 flex">
-                                  <h2 class="text-sm lg:text-lg font-semibold text-gray-800">Política antisoborno</h2>
+                                <div class="p-4 flex justify-between">
+                                  <h2 class="text-xs lg:text-lg font-semibold text-gray-800">Política antisoborno</h2>
                                   <button data-modal="modal4" class="ml-auto  text-blue-500 hover:text-blue-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-6 lg:h-6 w-4 h-4 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                       <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />
                                     </svg>
                                   </button>
@@ -176,68 +176,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     </div>
                 </div>
               </div>
-            </div>
-            <div class="col-span-2">
-              <section class="hidden lg:block mt-2">
-                  <div class="mx-auto max-w-screen-xl text-center">
-                      <div class="mx-auto mb-1 max-w-screen-sm">
-                          <h2 class="text-lg lg:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center  py-4 mb-2">Nuestro Equipo</h2>
-                      </div> 
-                      <div class="grid gap-4 grid-cols-1">
-                          <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                              <img class="mx-auto mb-4 w-16 h-16 rounded-full" src="static/img/staff/Carmen.png" alt="Bonnie Avatar">
-                              <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                                  <a href="#">Carmen Bernui Escobedo</a>
-                              </h3>
-                              <p class="text-xs lg:text-sm">Gerente General</p>
-                              <ul class="flex justify-center mt-4 space-x-4">
-                                  <li>
-                                      <a href="https://www.linkedin.com/in/carmen-bernui-escobedo-19338b28/" target="_blank" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
-                                  </li>
-                                  <li>
-                                      <a href="mailto:carmen.bernui@grupovicaf.com" target="_blank" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                        <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                              <img class="mx-auto mb-4 w-16 h-16 rounded-full" src="static/img/staff/Frank.png" alt="Helene Avatar">
-                              <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                                  <a href="#">Frank Gonzáles Vásquez</a>
-                              </h3>
-                              <p class="text-xs lg:text-sm">Gerente Operativo</p>
-                              <ul class="flex justify-center mt-4 space-x-4">
-                                <li>
-                                  <a href="https://pe.linkedin.com/in/frank-gonz%C3%A1les-80b2a2a8" target="_blank" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
-                                </li>
-                                  <li>
-                                    <a href="mailto:frank.gonzales@grupovicaf.com" target="_blank" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                      <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="text-center text-gray-500 dark:text-gray-400 hover:rounded-full transform hover:translate-y-2 transition-transform duration-300 ease-in-out">
-                              <img class="mx-auto mb-4 w-16 h-16 rounded-full" src="static/img/staff/Raquel.png" alt="Jese Avatar">
-                              <h3 class="mb-1 text-xs lg:text-sm font-semibold tracking-tight text-gray-900 dark:text-white">
-                                  <a href="#">Jessica Raquel Riojas Ortiz</a>
-                              </h3>
-                              <p class="text-xs lg:text-sm">Jefe de Laboratorio</p>
-                              <ul class="flex justify-center mt-4 space-x-4">
-                                <li>
-                                  <a href="https://www.linkedin.com/in/jessica-raquel-riojas-ortiz-219278140/" target="_blank" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>                                </a>
-                                </li>
-                                  <li>
-                                    <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
-                                      <svg class="w-6 h-6 fill-red-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                                  </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>  
-                  </div>
-              </section>
             </div>
           </div>
         </div>  

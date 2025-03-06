@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         <div class="bg-gray-50 mt-16">
             <!-- Modal -->
             <div id="myModalHome" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-                <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl h-[90vh] relative mt-16 flex flex-col">
+                <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl h-[90vh] relative mt-20 lg:mt-16 flex flex-col">
                     <div class="flex justify-between items-center p-4 border-b-2 border-pruple-900">
                         <h2 class="text-lg font-bold">Certificado</h2>
                         <button id="closeModalHome" class="bg-purple-900 text-white w-8 h-8 rounded-full hover:bg-red-600 flex items-center justify-center">
