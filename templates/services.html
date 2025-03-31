@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/servicios.css">
+</head>
+<body class="lg:flex h-screen w-full bg-gray-100">
+    <!-- Menú Lateral -->
+    <aside class="w-1/4 bg-gradient-to-b from-blue-800 via-blue-900 to-blue-950 p-6 shadow-2xl rounded-2xl hidden sm:block">
+        <div class="flex justify-between">
+            <a href="../index.html">
+                <button class="flex border broder-gray-900 items-center text-lg font-extrabold mt-2 px-2 text-center text-gray-900 tracking-wide shadow-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-lg py-3">
+                    <svg class="mt-1 fill-yellow-300 hover:fill-gray-600 rtl:rotate-180 w-3 h-3 lg:w-4 lg:h-4 ms-1 lg:ms-2 ml-2 transition-transform duration-300 ease-in-out hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l208 0 0-64L32 96zM192 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0zm-64-64c0 17.7 14.3 32 32 32l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0c-17.7 0-32 14.3-32 32zm96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0zm88-96l-.6 0c5.4 9.4 8.6 20.3 8.6 32c0 13.2-4 25.4-10.8 35.6c24.9 8.7 42.8 32.5 42.8 60.4c0 11.7-3.1 22.6-8.6 32l8.6 0c88.4 0 160-71.6 160-160l0-61.7c0-42.4-16.9-83.1-46.9-113.1l-11.6-11.6C429.5 77.5 396.9 64 363 64l-27 0c-35.3 0-64 28.7-64 64l0 88c0 22.1 17.9 40 40 40s40-17.9 40-40l0-56c0-8.8 7.2-16 16-16s16 7.2 16 16l0 56c0 39.8-32.2 72-72 72z"/></svg>
+                    <p class="ml-4 lg:block hidden text-xs font-semibold hover:text-gray-600">Volver Atrás</p>
+                </button>
+            </a>
+        </div>
+        <h2 class="text-lg font-extrabold mt-6 text-center text-white tracking-wide shadow-xl bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 rounded-lg py-3">Lista de Servicios</h2>
+        <ul id="menu" class="space-y-4  overflow-y-auto h-full mt-6 hidden sm:block">
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal1">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Control de calidad en obra</span>
+            </li>
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal2">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Estudio de mecánica de suelos</span>
+            </li>
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal3">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Estudio de canteras</span>
+            </li>
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal4">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Evaluación estructural</span>
+            </li>
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal5">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Diseño de mezclas de concreto</span>
+            </li>
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal6">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Ensayos de laboratorio</span>
+            </li>
+            <li class="menu-item flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal7">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Ensayos químicos</span>
+            </li>
+            <li class="menu-item mb-4 flex text-sm bg-white border border-gray-300 cursor-pointer p-4 rounded-xl shadow-md transition-all duration-300 ease-in-out transform flex items-center space-x-3" data-modal="modal10">
+                <svg class="w-4 h-4 fill-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 32c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32l0 224c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32zM32 448l288 0c70.7 0 128-57.3 128-128s-57.3-128-128-128l0-64c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128l16.9 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-160 0L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                <span class="text-gray-800">Alquiler de equipos</span>
+            </li>
+        </ul>
+    </aside>
+    <aside class="w-full bg-gradient-to-br from-white to-gray-50 p-6 shadow-2xl sm:hidden rounded-2xl border border-gray-200"> 
+        <div class="w-full">
+            <a href="../index.html" class="flex justify-between">
+                <button class="flex border broder-gray-900 items-center text-lg font-extrabold mt-2 px-2 text-center text-gray-900 tracking-wide shadow-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-lg py-3">
+                    <svg class="mt-1 fill-yellow-300 hover:fill-gray-600 rtl:rotate-180 w-3 h-3 lg:w-4 lg:h-4 ms-1 lg:ms-2 ml-2 transition-transform duration-300 ease-in-out hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l208 0 0-64L32 96zM192 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0zm-64-64c0 17.7 14.3 32 32 32l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0c-17.7 0-32 14.3-32 32zm96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0zm88-96l-.6 0c5.4 9.4 8.6 20.3 8.6 32c0 13.2-4 25.4-10.8 35.6c24.9 8.7 42.8 32.5 42.8 60.4c0 11.7-3.1 22.6-8.6 32l8.6 0c88.4 0 160-71.6 160-160l0-61.7c0-42.4-16.9-83.1-46.9-113.1l-11.6-11.6C429.5 77.5 396.9 64 363 64l-27 0c-35.3 0-64 28.7-64 64l0 88c0 22.1 17.9 40 40 40s40-17.9 40-40l0-56c0-8.8 7.2-16 16-16s16 7.2 16 16l0 56c0 39.8-32.2 72-72 72z"/></svg>
+                    <p class="ml-4  text-xs font-semibold hover:text-gray-600">Volver Atrás</p>
+                </button>
+            </a>
+        </div>
+        <select id="mobile-menu" 
+            class="w-full mt-2 bg-gradient-to-r from-white via-gray-50 to-gray-100 border border-gray-300 rounded-xl p-4 shadow-md text-gray-700 text-base font-medium 
+                   transition-all duration-300 ease-in-out 
+                   focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 
+                   hover:border-blue-400 hover:shadow-lg">
+            <option class="menu-item" value="0" selected>Control de calidad en obra</option>
+            <option class="menu-item" value="1">Estudio de mecánica de suelos</option>
+            <option class="menu-item" value="2">Estudio de canteras</option>
+            <option class="menu-item" value="3">Evaluación estructural</option>
+            <option class="menu-item" value="4">Diseño de mezclas</option>
+            <option class="menu-item" value="5">Ensayos de laboratorio</option>
+            <option class="menu-item" value="6">Ensayos químicos</option>
+            <option class="menu-item" value="7">Alquiler de equipos</option>
+        </select>
+    </aside> 
+    <!-- Tooltips (Popups) -->
+    <div id="modal1" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Control de calidad en obra</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <p class="mt-4 text-xs text-justify text-gray-700">
+                    Garantizamos que los proyectos se completen de manera satisfactoria y cumplan con los estándares de calidad requeridos.
+                </p>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Servicios ofrecidos
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Densidad campo mediante el cono y arena</li>
+                    <li>Contenido de humedad en campo</li>
+                    <li>Medición de asentamiento del concreto con el cono de Abrams</li>
+                    <li>Medición de la temperatura del concreto fresco</li>
+                    <li>Toma de muestra de concreto</li>
+                    <li>Esclerometría</li>
+                    <li>Extracción de núcleos de concreto con diamantina</li>
+                    <li>Ensayos de control de calidad de agregados</li>
+                </ul>
+            </div>
+            <div>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios        
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Personal Competente</li>
+                    <li>Acompañamiento Técnico</li>
+                    <li>Imparcialidad y Confidencialidad</li>
+                    <li>Cumplimiento Normativo</li>
+                    <li>Equipos Calibrados por entidades acreditadas en INACAL</li>
+                    <li>Resultados Inmediatos</li>
+                </ul>
+            </div>           
+        </div>
+    </div>
+    <div id="modal2" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Estudio de mecánica de suelos</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <ul class="list-disc list-inside mt-4 text-xs text-justify text-gray-700">
+                    <label>Ofrecemos estudios de mecánica de suelos con análisis precisos, ensayos especializados y asesoramiento técnico, garantizando resultados confiables para cimentaciones seguras en proyectos de construcción.</label>
+                </ul>
+            </div>
+            <div>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Previsión de posibles problemas de cimentación a causa de suelos perjudiciales</li>
+                    <li>Personal Competente</li>
+                    <li>Acompañamiento Técnico</li>
+                    <li>Imparcialidad y Confidencialidad</li>
+                    <li>Cumplimiento Normativo</li>
+                    <li>Equipos Calibrados por entidades acreditadas en INACAL</li>
+                    <li>Entrega de informes claros y estructurados</li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <div id="modal3" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Estudio de canteras</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <p class="mt-4 text-xs text-justify text-gray-700">
+                Realizamos estudios de canteras con ensayos de laboratorio para determinar la calidad, resistencia y viabilidad de los materiales, asegurando el cumplimiento normativo y de las especificaciones del proyecto. 
+            </p>
+            <div>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Análisis detallado de materiales</li>
+                    <li>Evaluación de resistencia y calidad</li>
+                    <li>Optimización de la selección de materiales</li>
+                    <li>Aseguramiento de la viabilidad del proyecto</li>
+                    <li>Resultados confiables para decisiones informadas</li>
+                    <li>Control de calidad en todas las etapas</li>
+                    <li>Equipos Calibrados por entidades acreditadas en INACAL</li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <div id="modal4" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Evaluación estructural</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <ul class="list-disc list-outside text-justify mt-4 text-xs text-gray-700">
+                    Nuestros ensayos para evaluación estructural brindan resultados detallados, esenciales para la fase de reforzamiento. Garantizamos información precisa que respalda la seguridad y estabilidad de sus proyectos en cada etapa.
+                </ul>                
+            </div>
+            <div>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Precisión en resultados</li>
+                    <li>Identificación de posibles fallos</li>
+                    <li>Mejora en la seguridad estructural</li>
+                    <li>Soporte para decisiones de reforzamiento</li>
+                    <li>Optimización de la vida útil de la estructura</li>
+                    <li>Reducción de riesgos en la construcción</li>
+                    <li>Aseguramiento de la estabilidad a largo plazo</li>
+                    <li>Equipos Calibrados por entidades acreditadas en INACAL</li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    <div id="modal5" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Diseño de mezclas</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <ul class="list-disc list-inside text-justify mt-4 text-xs text-gray-700">
+                    <label>Ofrecemos servicios de diseño de mezclas de concreto, adaptados a las necesidades específicas de su proyecto. Garantizamos resistencia, durabilidad y cumplimiento con las normativas vigentes para un rendimiento óptimo.</label>    
+                </ul>                
+            </div>
+            <div>
+                <p class="mt-2 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Resistencia y durabilidad</li>
+                    <li>Optimización de costos</li>
+                    <li>Cumplimiento normativo</li>
+                    <li>Reducción de riesgos</li>
+                    <li>Asesoría técnica</li>
+                    <li>Eficiencia en el uso de recursos</li>
+                    <li>Equipos Calibrados por entidades acreditadas en INACAL</li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    <div id="modal6" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Ensayos de laboratorio</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <ul class="list-disc list-inside text-justify mt-2 text-xs text-gray-700">
+                    <div>Realizamos ensayos de suelos, agregados y concreto con los más altos estándares de calidad. Contamos con acreditación INACAL-DA, garantizando resultados confiables y precisos para tus proyectos de construcción.</div>
+                    <div class="mt-1">Ya sea para control de calidad, diseño de mezclas o estudios geotécnicos, te brindamos el respaldo técnico que necesitas.
+                    </div>
+                </ul>                
+            </div>
+            <div>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Ensayos con acreditación INACAL (Ver Alcance de Acreditación)</li>
+                    <li>Alta precisión y confiabilidad</li>
+                    <li>Cumplimiento de normativas técnicas Nacionales e Internacionales</li>
+                    <li>Resultados respaldados por profesionales especializados</li>
+                    <li>Equipos calibrados por entidades Acreditadas por INACAL</li>
+                    <li>Garantía de resultados trazables</li>
+                    <li>Entrega de informes en el menor tiempo posible</li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    <div id="modal7" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Ensayos químicos</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <ul class="list-disc list-inside text-justify mt-4 text-xs text-gray-700">
+                    <label for="">Realizamos ensayos químicos especializados para identificar la agresividad de suelos y agregados, evaluando su impacto en estructuras y materiales. Previene daños y optimiza la durabilidad de tu proyecto.</label>
+                </ul>                
+            </div>
+            <div>
+                <p class="mt-4 text-xs text-justify font-semibold text-gray-700">
+                    Beneficios
+                </p>
+                <ul class="list-disc list-outside mt-4 text-xs text-gray-700 pl-5">
+                    <li>Evaluación de riesgo para cimentaciones y concreto</li>
+                    <li>Identificación de agresividad química</li>
+                    <li>Prevención de deterioro en estructuras por efectos químicos</li>
+                    <li>Optimización en la selección de materiales adecuados</li>
+                    <li>Mayor durabilidad y resistencia de las obras</li>
+                    <li>Reducción de costos por mantenimiento y reparaciones</li>
+                    <li>Resultados precisos y confiables con métodos especializados</li>
+                    <li>Decisiones más seguras en diseño y construcción</li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    <div id="modal8" class="tooltip hidden fixed inset-0 flex items-start justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div class="tooltip-content w-full mt-12 p-6 bg-white shadow-2xl border border-gray-300 rounded-lg">
+            <div class="flex justify-between items-center">
+                <span class="font-semibold text-blue-800 text-sm">Alquiler de equipos</span>
+                <button class="close-tooltip text-gray-500 hover:text-red-600 transition duration-200 ">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>                
+            </div>
+            <div>
+                <ul class="list-disc list-inside text-justify mt-4 text-xs text-gray-700">
+                    <label for="">
+                        Ponemos a tu disposición equipos de laboratorio para ensayos de suelos, agregados y concreto, calibrados y listos para su uso.
+                    </label>
+                </ul>                
+            </div>
+            <div>
+            </div>  
+        </div>
+    </div>
+    <!-- Contenedor del Carrusel -->
+    <main class="flex-1 p-4">
+        <div id="carousel" class="relative h-full w-full bg-white rounded-lg shadow-lg overflow-hidden">
+            <div id="images" class="flex transition-transform duration-300">
+                <img src="../static/img/detailservices/controlcalidad/CC-1.jpeg" alt="Imagen 1" class="carousel-image w-full h-full object-cover">
+                <img src="../static/img/detailservices/controlcalidad/Densidad.jpeg" alt="Imagen 2" class="carousel-image w-full h-full object-cover hidden">
+                <img src="../static/img/detailservices/controlcalidad/DIAMANTINA.jpeg" alt="Imagen 3" class="carousel-image w-full h-full object-cover hidden">
+                <img src="/staticvicaf/static/img/img4.jpeg" alt="Imagen 4" class="carousel-image w-full h-full object-cover hidden">
+            </div>
+            <button id="prev" class="absolute text-sm left-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full w-8 h-8">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+            </button>
+            <button id="next" class="absolute text-sm right-0 top-1/2 transform -translate-y-1/2 bg-white text-white p-2 rounded-full">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+            </button>
+        </div>
+    </main>
+    <script src="../static/js/functionservices.js"></script>
+</body>
+</html>
