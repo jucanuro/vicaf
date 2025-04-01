@@ -1,26 +1,28 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     const templateAdminJobs = `
-   <div class="max-w-7xl mt-4 mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-        <h1 class="text-3xl font-extrabold text-gray-800 mb-6 text-center">Administración</h1>
+  <div class="max-w-7xl mt-6 mx-auto bg-white p-10 rounded-2xl shadow-xl border border-gray-300">
+        <h1 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">Administración de bolsa de trabajo</h1>
         
-        <form id="job-form" class="mb-6 bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-300">
-            <div class="grid grid-cols-2 gap-4">
+        <form id="job-form" class="mb-8 bg-gray-100 p-8 rounded-2xl shadow-md border border-gray-300">
+            <div class="grid grid-cols-2 gap-6">
                 <div class="col-span-1">
-                    <label for="job-title" class="block text-sm font-semibold text-gray-700 mb-2">Título del trabajo</label>
-                    <input type="text" id="job-title" placeholder="Ejemplo: Jefe de laboratorio" class="w-full text-sm p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4" required>
+                    <label for="job-title" class="block text-base font-semibold text-gray-800 mb-2">Título del Puesto</label>
+                    <input type="text" id="job-title" placeholder="Ejemplo: Jefe de laboratorio" class="w-full text-base p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
                 </div>
                 <div class="col-span-1">
-                    <label for="job-file" class="block text-sm font-semibold text-gray-700 mb-2">Adjuntar PDF</label>
-                    <input type="file" id="job-file" accept="application/pdf" class="w-full text-sm p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
+                    <label for="job-file" class="block text-base font-semibold text-gray-800 mb-2">Adjuntar PDF</label>
+                    <input type="file" id="job-file" accept="application/pdf" class="w-full text-base p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 </div>
             </div>
-            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300">Agregar</button>
+            <button type="submit" class="mt-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300">Agregar Puesto</button>
         </form>
         
-        <ul id="job-list" class="space-y-4"></ul>
+        <ul id="job-list" class="space-y-6 bg-gray-50 p-6 rounded-lg shadow-md border border-gray-300">
+            <!-- Los elementos de la lista se agregarán aquí -->
+        </ul>
         
-        <button id="publish-button" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 mt-6 hidden">Publicar</button>
-    </div>
+        <button id="publish-button" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 mt-8 hidden">Publicar Puestos</button>
+    </div
 `;
     document.getElementById("jobs-admin-content").innerHTML = templateAdminJobs;
     const jobForm = document.getElementById('job-form');
@@ -51,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
         
         li.innerHTML = `
-            <span class="text-lg font-medium text-gray-800">${title} ${fileLink ? `<a href="${fileLink}" target="_blank" class="text-blue-500 underline">(Ver PDF)</a>` : ''}</span>
+            <span class="text-lg font-medium text-gray-800">${title} ${fileLink ? `<a href="${fileLink}" target="_blank" class="text-blue-500 underline">(Ver Requisitos)</a>` : ''}</span>
             <div>
                 <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition duration-300 mr-2" onclick="this.parentElement.parentElement.remove(); togglePublishButton();">Eliminar</button>
             </div>
