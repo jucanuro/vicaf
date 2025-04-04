@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     const templateHome = `
-        <div class="bg-gray-50 mt-16">
+        <div id="home" class="bg-gray-50 mt-16">
             <!-- Modal -->
             <div id="myModalHome" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
                 <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl h-[90vh] relative mt-20 lg:mt-16 flex flex-col">
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
             </div>
             <div class="relative">
                 <div class="absolute z-10 px-4 py-4">
-                    <p class="text-white lg:text-lg text-sm text-semibold">LABORATORIO DE ENSAYOS ACREDITADO POR INACAL - DA CON REGISTRO N° LE-230</p>
-                    <p class="text-white lg:text-xs text-xs text-semibold mt-1">SUELOS - AGREGADOS - CONCRETO - ASFALTO - ROCAS - CAL - CARBÓN</p>
+                    <p class="text-white lg:text-lg text-xs font-semibold">LABORATORIO DE ENSAYOS ACREDITADO POR INACAL - DA CON REGISTRO N° LE-230</p>
+                    <p class="text-white lg:text-sm text-xs font-semibold mt-1">SUELOS - AGREGADOS - CONCRETO - ASFALTO - ROCAS - CAL - CARBÓN</p>
                     <div class="flex mt-4">
-                        <button type="button" class="text-gray-800 lg-text-sm text-xs bg-yellow-500 hover:text-white hover:bg-blue-950 focus:outline-none font-medium rounded-lg text-sm px-3 py-1.5 text-center me-2 mb-2 flex"
+                        <button type="button" class="text-gray-800 lg:text-sm text-xs bg-yellow-500 hover:text-white hover:bg-blue-950 focus:outline-none font-medium rounded-lg px-3 py-1.5 text-center me-2 mb-2 flex"
                             onclick="document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' });"
                             onmouseup="this.blur()">
                             Ver Servicios
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                             </svg>
                         </button>
                         <a href="static/pdf/BROCHURE_2025_VICAF_2025.pdf" target="_blank" rel="noopener noreferrer">
-                            <button type="button" class="ml-4 text-gray-800 lg-text-sm text-xs bg-yellow-500 hover:text-white hover:bg-blue-950 focus:outline-none font-medium rounded-lg text-sm px-3 py-1.5 text-center me-2 mb-2 flex">
+                            <button type="button" class="ml-4 text-gray-800 lg:text-sm text-xs bg-yellow-500 hover:text-white hover:bg-blue-950 focus:outline-none font-medium rounded-lg px-3 py-1.5 text-center me-2 mb-2 flex">
                                 Descargar Brochure
                                 <svg class="w-4 h-4 ml-2 mt-1 transition-transform duration-300 ease-in-out hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
                                     <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path>
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <!-- Carousel Items -->
                 <div class="carousel-item active w-full h-full">
                     <img src="static/img/home/PORTADA5.jpg" alt="Image 1" class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
-                    <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="absolute inset-0 top-3 flex items-center justify-center">
                         <h2 class="lg:w-96 w-64 h-20 bg-yellow-500 text-gray-800 text-xs lg:text-lg px-2 py-1 font-bold opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100">
                             Texto sobre Imagen 1
                         </h2>
