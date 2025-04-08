@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     const templateHome = `
-        <div id="home" class="bg-gray-50 mt-16">
+        <div id="home" class="bg-gray-50">
             <!-- Modal -->
-            <div id="myModalHome" class="fixed hidden inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-                <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl h-[90vh] relative mt-20 lg:mt-16 flex flex-col">
+            <div id="myModalHome" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+                <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl h-[autopx] relative mt-20 lg:mt-16 flex flex-col">
                     <div class="flex justify-between items-center p-4 border-b-2 border-pruple-900">
                         <h2 class="text-lg font-bold">Certificado</h2>
                         <button id="closeModalHome" class="bg-purple-900 text-white w-8 h-8 rounded-full hover:bg-red-600 flex items-center justify-center">
@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
                             alt="Certificado">
                     </div>
                 </div>
-                < /div>
+                </div>
             </div>
             <div class="relative">
-                <div class="absolute z-10 px-4 py-4">
-                    <p class="text-white lg:text-lg text-xs font-semibold">LABORATORIO DE ENSAYOS ACREDITADO POR INACAL - DA CON REGISTRO N° LE-230</p>
-                    <p class="text-white lg:text-sm text-xs font-semibold mt-1">SUELOS - AGREGADOS - CONCRETO - ASFALTO - ROCAS - CAL - CARBÓN</p>
+                <div class="absolute z-10 px-4 py-4 mt-16">
+                    <p class="text-white lg:text-2xl text-xs font-semibold">LABORATORIO DE ENSAYOS ACREDITADO POR INACAL - DA CON REGISTRO N° LE-230</p>
+                    <p class="text-white lg:text-lg text-xs font-semibold mt-1">SUELOS - AGREGADOS - CONCRETO - ASFALTO - ROCAS - CAL - CARBÓN</p>
                     <div class="flex mt-4">
                         <button type="button" class="text-gray-800 lg:text-sm text-xs bg-yellow-500 hover:text-white hover:bg-blue-950 focus:outline-none font-medium rounded-lg px-3 py-1.5 text-center me-2 mb-2 flex"
                             onclick="document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' });"
@@ -49,47 +49,87 @@ document.addEventListener("DOMContentLoaded", function(e) {
             <!-- Carousel -->
             <div id="carousel" class="carousel relative w-full h-screen overflow-hidden inset-0 bg-black/50">
                 <!-- Carousel Items -->
-                <div class="carousel-item active w-full h-full">
-                    <img src="static/img/home/PORTADA5.jpg" alt="Image 1" class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
-                    <div class="absolute inset-0 top-3 flex items-center justify-center">
-                        <h2 class="lg:w-96 w-64 h-20 bg-yellow-500 text-gray-800 text-xs lg:text-lg px-2 py-1 font-bold opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100">
-                            Texto sobre Imagen 1
-                        </h2>
+                <div class="carousel-item active relative w-full h-full">
+                   <img src="static/img/home/PORTADA5.jpg" 
+                        alt="Imagen de portada"
+                        loading="lazy"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+                    <div       x-data="{ visible: true, timeout: 6000, timer: null }" 
+                                x-init="timer = setTimeout(() => visible = false, timeout)" 
+                                @mouseenter="visible = true; clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                                @mouseleave="clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                                x-show="visible"
+                                x-transition
+                            class="absolute top-1/4 right-4 lg:block hidden">
+                            <h2 class=" text-white font-semibold text-sm">
+                                Texto sobre Imagen 1
+                            </h2>
                     </div>
                 </div>
-                <div class="carousel-item w-full h-full hidden">
-                    <img src="static/img/home/PORTADA4.jpeg" alt="Image 2" class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <h2 class="lg:w-96 w-64 h-20 bg-yellow-500 text-gray-800 text-xs lg:text-lg px-2 py-1 font-bold opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100">
-                            Texto sobre Imagen 2
-                        </h2>
+                <div class="relative carousel-item w-full h-full hidden">
+                   <img src="static/img/home/PORTADA4.jpeg" 
+                        alt="Image 2"
+                        loading="lazy"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+                    <div       x-data="{ visible: true, timeout: 12000, timer: null }" 
+                                x-init="timer = setTimeout(() => visible = false, timeout)" 
+                                @mouseenter="visible = true; clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                                @mouseleave="clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                                x-show="visible"
+                                x-transition
+                            class="absolute top-1/4 right-4 lg:block hidden">
+                            <h2 class=" text-white font-semibold text-sm">
+                                Texto sobre Imagen 2
+                            </h2>
                     </div>
                 </div>
-                <div class="carousel-item w-full h-full hidden">
-                    <img src="static/img/home/PORTADA3.jpg" alt="Image 3" class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <h2 class="lg:w-96 w-64 h-20 bg-yellow-500 text-gray-800 text-xs lg:text-lg px-2 py-1 font-bold opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100">
-                            Texto sobre Imagen 3
-                        </h2>
+                <div class="realtive carousel-item w-full h-full hidden">
+                    <img src="static/img/home/PORTADA3.jpg" 
+                        alt="Image 3"
+                        loading="lazy"
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+
+                     <div   x-data="{ visible: true, timeout: 18000, timer: null }" 
+                            x-init="timer = setTimeout(() => visible = false, timeout)" 
+                            @mouseenter="visible = true; clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                            @mouseleave="clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                            x-show="visible"
+                            x-transition
+                            class="absolute top-1/4 right-4 lg:block hidden">
+                            <h2 class=" text-white font-semibold text-sm">
+                                Texto sobre Imagen 3
+                            </h2>
                     </div>
                 </div>
                 <div class="carousel-item w-full h-full hidden">
                     <img src="static/img/home/PORTADA2.jpg" alt="Image 4" class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <h2 class="lg:w-96 w-64 h-20 bg-yellow-500 text-gray-800 text-xs lg:text-lg px-2 py-1 font-bold opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100">
-                            Texto sobre Imagen 4
-                        </h2>
+                     <div   x-data="{ visible: true, timeout: 24000, timer: null }" 
+                            x-init="timer = setTimeout(() => visible = false, timeout)" 
+                            @mouseenter="visible = true; clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                            @mouseleave="clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                            x-show="visible"
+                            x-transition
+                            class="absolute top-1/4 right-4 lg:block hidden">
+                            <h2 class=" text-white font-semibold text-sm">
+                                Texto sobre Imagen 4
+                            </h2>
                     </div>
                 </div>
                 <div class="carousel-item w-full h-full hidden">
                     <img src="static/img/home/PORTADA1.jpg" alt="Image 5" class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <h2 class="lg:w-96 w-64 h-20 bg-yellow-500 text-gray-800 text-xs lg:text-lg px-2 py-1 font-bold opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100">
-                            Texto sobre Imagen 5
-                        </h2>
+                     <div   x-data="{ visible: true, timeout: 30000, timer: null }" 
+                            x-init="timer = setTimeout(() => visible = false, timeout)" 
+                            @mouseenter="visible = true; clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                            @mouseleave="clearTimeout(timer); timer = setTimeout(() => visible = false, timeout)"
+                            x-show="visible"
+                            x-transition
+                            class="absolute top-1/4 right-4 lg:block hidden">
+                            <h2 class=" text-white font-semibold text-sm">
+                                Texto sobre Imagen 5
+                            </h2>
                     </div>
                 </div>
-                <div class="absolute bottom-16 w-full overflow-hidden">
+                <div class="absolute bottom-4 w-full overflow-hidden">
                     <div class="whitespace-nowrap animate-marquee text-center text-white text-sm font-semibold">
                         PRECISIÓN EN RESULTADOS • ACOMPAÑAMIENTO TÉCNICO • IMPARCIALIDAD Y CONFIDENCIALIDAD • PERSONAL COMPETENTE • EQUIPOS CALIBRADOS POR ENTIDADES ACREDITADAS POR INACAL
                     </div>

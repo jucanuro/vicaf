@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     <div class="bg-white shadow-lg mt-4  rounded-2xl overflow-hidden transform transition duration-300 hover:scale-105">
                         <img src="static/img/certificaciones/GRUPO-VICAF-CERTIFICADO.jpg" alt="Imagen" class="w-full h-56 object-contain">
                         <div class="p-4 flex justify-between">
-                          <h2 class="text-xs lg:text-lg font-semibold text-gray-800">Acreditación Inacal</h2>
+                          <h2 class="text-xs lg:text-lg font-semibold text-gray-800">Acreditación INACAL</h2>
                           <button data-modal="modal1" class="ml-auto mb-1  text-blue-500 hover:text-blue-700">
                             <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-6 lg:h-6 w-4 h-4 text-red-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                               <path d="M19 2H8.414A2 2 0 006 3.414L4.586 5H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-1 18H6v-1.5h12V20zm-2.5-4H8V8h7.5v4.5h1V8h1.5v4.5h-1V11h-1.5v5.5zM7.5 13v-1.5h-1v-1h1v-1.5h1V11h-1v1.5h1V13h-1zM12 12.5v-1h-1.5v1H12zm0 1.5v-1h-1.5v1H12z" />

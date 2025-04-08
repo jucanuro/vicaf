@@ -1,12 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(e) {
     const templateFooter = `
 <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="lg:flex lg:items-center lg:justify-between">
-            <a href="#" class="text-2xl font-bold lg:px-8 mt-4 lg:mt-0">
-                <img class="w-[autopx] h-[autopx] opacity-100 shadow-none col-span-2 lg:max-h-12 max-h-9 w-full object-contain lg:col-span-1 shadow-2" src="static/img/logos/LogoF.png" alt="Reform" width="158" height="48">
-            </a>
-             <div class="flex justify-center space-x-4 lg:px-8  mt-4 lg:mt-0">
+    <div class="grid grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="col-span-1 mt-3">
+            <div class="lg:flex lg:items-center">
+                <a href="#" class="text-2xl font-bold lg:px-8 mt-4 lg:mt-0">
+                    <img class="w-[autopx] h-[autopx] opacity-100 shadow-none col-span-2 lg:max-h-12 max-h-9 w-full object-contain lg:col-span-1 shadow-2" src="static/img/logos/LogoF.png" alt="Reform" width="175" height="60">
+                </a>
+                <a href="#" class="text-2xl font-bold lg:px-8 mt-4 lg:mt-0">
+                    <img class="lg:mt-0 mt-4 w-[autopx] h-[autopx] opacity-100 shadow-none col-span-2 lg:max-h-12 max-h-9 w-full object-contain lg:col-span-1 shadow-2" src="static/img/logos/LogoInacal.jpg" alt="Reform" width="175" height="60">
+                </a>
+            </div>
+        </div>
+        <div class="col-span-1 lg:mt-6 mt-2">
+            <div class="flex justify-center space-x-4 lg:px-8  mt-4 lg:mt-0">
                 <a target="_blank"  href="https://pe.linkedin.com/company/grupo-vicaf-sac" class="text-blue-600 hover:text-blue-800">
                         <svg class="w-6 h-6 fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>				
                     </a>
@@ -20,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
                         <svg class="h-6 w-6 fill-red-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>					
                     </a>	
             </div>
-            <ul class="flex flex-wrap items-center mt-4 lg:mt-0 mb-2 lg:mb-6 text-sm font-semibold text-blue-950 sm:mb-0 dark:text-gray-400">
+        </div> 
+        <div class="col-span-1 lg:mt-6 mt-2">
+            <ul class="flex flex-wrap items-center justify-center mt-4 lg:mt-0 mb-2 lg:mb-6 text-sm font-semibold text-blue-950 sm:mb-0 dark:text-gray-400">
                 <li>
                     <a href="#home" class="hover:underline me-4 md:me-6">Inicio</a>
                 </li>
@@ -31,11 +40,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     <a href="#servicios" class="hover:underline me-4 md:me-6">Servicios</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline">Contactenos</a>
+                    <a href="#contactenos" class="hover:underline">Contactenos</a>
                 </li>
             </ul>
-        </div>
-        <hr class="lg:my-6 my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        </div>     
+    </div>
+    <div class="w-full max-w-screen-xl mx-auto p-4">
+        <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700" />
         <span class="block text-sm text-gray-950 lg:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">Grupo Vicaf</a>. Todos los derechos reservados.</span>
     </div>
 </footer>

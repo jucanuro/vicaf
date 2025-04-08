@@ -20,6 +20,16 @@
     <div id="list-job-content"></div>
     <div id="footer-content"></div> 
 </body>
+<script>
+    window.onload = function() {
+      if (window.history && window.history.scrollRestoration) {
+        window.history.scrollRestoration = 'manual'; // Deshabilita la restauración del scroll
+      }
+      document.getElementById('home-content').scrollIntoView({ behavior: 'smooth' });
+    };
+  </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 <script src="static/js/header.js"></script>
 <script src="static/js/home.js"></script>
 <script src="static/js/whatsapp.js"></script>
